@@ -4,7 +4,7 @@ services:
   bogo-sort:
     depends_on:
       - redis
-    build: .
+    image: iacopomelani/bogo-sort-cluster:latest
     ports:
       - 8888:8888
   redis:
